@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gallery</title>
+
+  <!-- lightGallery CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+</head>
+<body>
+
+  <h1 style="text-align: center;">My Image Gallery</h1>
+
+  <!-- Gallery container -->
+  <div id="lightgallery" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <!-- Example image -->
+    <a href="images/photo1.jpg">
+      <img src="images/photo1.jpg" style="width: 200px;">
+    </a>
+    <!-- Add more images like above -->
+  </div>
+
+  <!-- lightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+
+  <!-- Initialize -->
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgZoom],
+      speed: 500
+    });
+  </script>
+
+</body>
+</html>
